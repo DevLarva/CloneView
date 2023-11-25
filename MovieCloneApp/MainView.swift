@@ -8,13 +8,47 @@
 import SwiftUI
 
 struct MainView: View {
+    
     var body: some View {
         NavigationStack {
-            VStack {
+            
+            ZStack {
+                Color.black
+                    .ignoresSafeArea()
+                ScrollView {
+                    VStack {
+                        ForEach(moviesData) { movies in
+                            MovieCell(movie: movies)
+                        }
+                    }
+                }
+                .padding()
+                .toolbar {
+                       ToolbarItem(placement: .principal) {
+                         VStack {
+                           Text("MOVIES")
+                             .foregroundColor(.white)
+                             .font(.title3)
+                             .bold()
+                         }
+                       }
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "magnifyingglass")
+                                .foregroundColor(.white)
+                                .bold()
+                        }
+                    }
+                     }
+                     .toolbarBackground(.visible, for: .navigationBar)
+                     .toolbarBackground(.black, for: .navigationBar)
+                     .navigationBarTitleDisplayMode(.inline)
+                    
+                }
                 
-            }
-            .navigationTitle("MARVEL MOVIES")
-            .navigationBarTitleDisplayMode(.inline)
+            
         }
     }
 }

@@ -16,7 +16,6 @@ struct MovieDetailMain: View {
                     .resizable()
                     .ignoresSafeArea()
                 VStack {
-                    
                     readmoreView(movie.description, lineLimit: 3)
                         .font(.title2)
                         .foregroundStyle(.white)

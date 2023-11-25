@@ -10,6 +10,7 @@ import SwiftUI
 struct MovieCell: View {
     var movie: Movie
     var body: some View {
+        NavigationLink(destination: MovieDetailMain(movie: movie)) {
             HStack(alignment: .top,spacing: 12) {
                 Image(movie.mainimage)
                     .resizable()
@@ -32,7 +33,7 @@ struct MovieCell: View {
             }
             .background(Color.black)
             .clipShape(RoundedRectangle(cornerRadius: 10))
-        
+        }
     }
 }
 
