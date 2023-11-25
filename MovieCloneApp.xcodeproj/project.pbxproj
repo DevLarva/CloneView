@@ -19,6 +19,7 @@
 		AC28BBB32B0F737000E071D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC28BBB22B0F737000E071D3 /* Preview Assets.xcassets */; };
 		AC28BBBC2B0F965000E071D3 /* SidebarMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28BBBB2B0F965000E071D3 /* SidebarMainView.swift */; };
 		AC28BBC02B0F98F600E071D3 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28BBBF2B0F98F600E071D3 /* MovieData.swift */; };
+		AC5308D42B123D740031BA1F /* VideoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5308D32B123D740031BA1F /* VideoCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		AC28BBB22B0F737000E071D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC28BBBB2B0F965000E071D3 /* SidebarMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarMainView.swift; sourceTree = "<group>"; };
 		AC28BBBF2B0F98F600E071D3 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
+		AC5308D32B123D740031BA1F /* VideoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				AC0316522B0F9ECE004F7C41 /* MovieCell.swift */,
 				AC0316562B0FA796004F7C41 /* readmoreView.swift */,
 				AC0316542B0FA58D004F7C41 /* MovieDetailMain.swift */,
+				AC5308D32B123D740031BA1F /* VideoCardView.swift */,
 				AC28BBBA2B0F961800E071D3 /* Sidebar */,
 			);
 			path = View;
@@ -195,6 +198,7 @@
 				AC28BBAC2B0F736F00E071D3 /* MovieCloneAppApp.swift in Sources */,
 				AC0316512B0F9E17004F7C41 /* MainView.swift in Sources */,
 				AC28BBBC2B0F965000E071D3 /* SidebarMainView.swift in Sources */,
+				AC5308D42B123D740031BA1F /* VideoCardView.swift in Sources */,
 				AC0316572B0FA796004F7C41 /* readmoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
