@@ -24,14 +24,14 @@ struct MainView: View {
                 }
                 .padding()
                 .toolbar {
-                       ToolbarItem(placement: .principal) {
-                         VStack {
-                           Text("MOVIES")
-                             .foregroundColor(.white)
-                             .font(.title3)
-                             .bold()
-                         }
-                       }
+                    ToolbarItem(placement: .principal) {
+                        VStack {
+                            Text("MOVIES")
+                                .foregroundColor(.white)
+                                .font(.title3)
+                                .bold()
+                        }
+                    }
                     ToolbarItem(placement: .topBarTrailing) {
                         Button {
                             
@@ -41,13 +41,13 @@ struct MainView: View {
                                 .bold()
                         }
                     }
-                     }
-                     .toolbarBackground(.visible, for: .navigationBar)
-                     .toolbarBackground(.black, for: .navigationBar)
-                     .navigationBarTitleDisplayMode(.inline)
-                    
                 }
+                .toolbarBackground(.visible, for: .navigationBar)
+                .toolbarBackground(.black, for: .navigationBar)
+                .navigationBarTitleDisplayMode(.inline)
                 
+            }
+            
             
         }
     }

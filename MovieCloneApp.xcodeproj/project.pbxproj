@@ -37,6 +37,7 @@
 		AC28BBBB2B0F965000E071D3 /* SidebarMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarMainView.swift; sourceTree = "<group>"; };
 		AC28BBBF2B0F98F600E071D3 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
 		AC5308D32B123D740031BA1F /* VideoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCardView.swift; sourceTree = "<group>"; };
+		ACD18D982B138358000318B4 /* 어벤져스  THE AVENGERS  1차 공식 예고편 (한국어 CC).mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "어벤져스  THE AVENGERS  1차 공식 예고편 (한국어 CC).mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 				AC28BBBE2B0F98C700E071D3 /* Model */,
 				AC28BBB92B0F961100E071D3 /* View */,
 				AC28BBAF2B0F737000E071D3 /* Assets.xcassets */,
+				ACD18D972B13834F000318B4 /* Video */,
 				AC28BBB12B0F737000E071D3 /* Preview Content */,
 			);
 			path = MovieCloneApp;
@@ -117,6 +119,14 @@
 				AC03165A2B0FAA23004F7C41 /* AVPlayermodel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ACD18D972B13834F000318B4 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				ACD18D982B138358000318B4 /* 어벤져스  THE AVENGERS  1차 공식 예고편 (한국어 CC).mp4 */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -9,6 +9,18 @@ import SwiftUI
 
 struct MovieDetailMain: View {
     var movie: Movie
+    
+    private var videos: [Video] {
+        guard let path = Bundle.main.resourcePath, let files = try? FileManager.default.contentsOfDirectory(atPath: path) else { return [] }
+        var videos: [Video] = []
+        for fileName in files where fileName.hasSuffix("mp4") {
+            let videoName = fileName.replacingOccurrences(of: ".mp4", with: "")
+            let video = Video(videoName: videoName)
+            videos.append(video)
+        }
+        return videos
+    }
+    
     var body: some View {
         VStack {
             ZStack {
@@ -16,6 +28,10 @@ struct MovieDetailMain: View {
                     .resizable()
                     .ignoresSafeArea()
                 VStack {
+                    
+                    NavigationLink(destination: VideoPlayView(video: videos[0])) {
+                        VideoCardView(video: videos[0])
+                    }
                     readmoreView(movie.description, lineLimit: 3)
                         .font(.title2)
                         .foregroundStyle(.white)
