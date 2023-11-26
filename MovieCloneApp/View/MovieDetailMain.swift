@@ -22,32 +22,24 @@ struct MovieDetailMain: View {
     }
     
     var body: some View {
-        
-            
             ZStack {
                 
                 Image(movie.detailimage)
                     .resizable()
                     .ignoresSafeArea()
+                //.blur(radius: 4)
                 ScrollView {
                     VStack {
-                        
-                        Spacer().frame(height: 200)
+                        Spacer().frame(height: 280)
                         
                         NavigationLink(destination: VideoPlayView(video: videos[0])) {
-                            
                             VideoCardView(video: videos[0])
+                        }.padding(.bottom)
                             
-                        }
+                        readmoreView(movie.description, lineLimit: 6)
                             
-                        readmoreView(movie.description, lineLimit: 3)
-                            .font(.title2)
-                            .foregroundStyle(.white)
-                            .bold()
-                            .padding(.vertical)
                     }
                     .padding()
-                    .zIndex(1)
                 }
             }
             

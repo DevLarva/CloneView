@@ -29,15 +29,19 @@ struct readmoreView: View {
     
     var body: some View {
         ZStack {
-            Color.black
-               
             VStack(alignment: .leading) {
                 Text(text)
+                    .font(.title3)
+                    .foregroundStyle(.white)
+                    .bold()
+                    .padding(.vertical)
+                    
+                    .kerning(1)
                     .lineLimit(expanded ? nil : lineLimit)
                     .background(
                         Text(text).lineLimit(lineLimit)
                             .background(GeometryReader { visibleTextGeometry in
-                                ZStack { //large size zstack to contain any size of text
+                                ZStack {
                                     Text(self.text)
                                         .background(GeometryReader { fullTextGeometry in
                                             Color.clear.onAppear {
@@ -47,7 +51,7 @@ struct readmoreView: View {
                                 }
                                 .frame(height: .greatestFiniteMagnitude)
                             })
-                            .hidden() //keep hidden
+                            .hidden()
                     )
                 if truncated {
                     Button(action: {
@@ -59,6 +63,10 @@ struct readmoreView: View {
                     })
                 }
             }
+            .padding()
+            .background(Color.black)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 2))
         }
     }
 }

@@ -20,11 +20,15 @@ class Video {
         let url = Bundle.main.url(forResource: videoName, withExtension: "mp4")!
         let asset = AVURLAsset(url: url, options: nil)
         
+        let midTime = CMTime(value: asset.duration.value / 2, timescale: asset.duration.timescale)
+        // 영상의 총 길이의 딱 절반에 해당하는 시간을 구해주고 그걸 아래에서 썸네일로 사용
+        
+        
         // thumnail(썸네일) 구하기
         var thumnailImage = UIImage(named: "defaultThumnail")
         let imgGenerator = AVAssetImageGenerator(asset: asset)
         do {
-            let cgImage = try imgGenerator.copyCGImage(at: CMTime(value: 0, timescale: 1), actualTime: nil)
+            let cgImage = try imgGenerator.copyCGImage(at: midTime, actualTime: nil)
             thumnailImage = UIImage(cgImage: cgImage)
         } catch {
             print(error.localizedDescription)
@@ -36,3 +40,9 @@ class Video {
         self.duration = Int(CMTimeGetSeconds(duration))
     }
 }
+
+
+/**
+ - CMTime
+ -
+ */
