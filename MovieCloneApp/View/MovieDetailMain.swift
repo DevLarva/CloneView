@@ -22,26 +22,36 @@ struct MovieDetailMain: View {
     }
     
     var body: some View {
-        VStack {
+        
+            
             ZStack {
+                
                 Image(movie.detailimage)
                     .resizable()
                     .ignoresSafeArea()
-                VStack {
-                    
-                    NavigationLink(destination: VideoPlayView(video: videos[0])) {
-                        VideoCardView(video: videos[0])
+                ScrollView {
+                    VStack {
+                        
+                        Spacer().frame(height: 200)
+                        
+                        NavigationLink(destination: VideoPlayView(video: videos[0])) {
+                            
+                            VideoCardView(video: videos[0])
+                            
+                        }
+                            
+                        readmoreView(movie.description, lineLimit: 3)
+                            .font(.title2)
+                            .foregroundStyle(.white)
+                            .bold()
+                            .padding(.vertical)
                     }
-                    readmoreView(movie.description, lineLimit: 3)
-                        .font(.title2)
-                        .foregroundStyle(.white)
-                        .bold()
+                    .padding()
+                    .zIndex(1)
                 }
-                .padding()
-                .zIndex(1)
             }
             
-        }
+        
     }
 }
 

@@ -28,32 +28,36 @@ struct readmoreView: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(text)
-                .lineLimit(expanded ? nil : lineLimit)
-                .background(
-                    Text(text).lineLimit(lineLimit)
-                        .background(GeometryReader { visibleTextGeometry in
-                            ZStack { //large size zstack to contain any size of text
-                                Text(self.text)
-                                    .background(GeometryReader { fullTextGeometry in
-                                        Color.clear.onAppear {
-                                            self.truncated = fullTextGeometry.size.height > visibleTextGeometry.size.height
-                                        }
-                                    })
-                            }
-                            .frame(height: .greatestFiniteMagnitude)
-                        })
-                        .hidden() //keep hidden
-                )
-            if truncated {
-                Button(action: {
-                    withAnimation {
-                        expanded.toggle()
-                    }
-                }, label: {
-                    Text(moreLessText)
-                })
+        ZStack {
+            Color.black
+               
+            VStack(alignment: .leading) {
+                Text(text)
+                    .lineLimit(expanded ? nil : lineLimit)
+                    .background(
+                        Text(text).lineLimit(lineLimit)
+                            .background(GeometryReader { visibleTextGeometry in
+                                ZStack { //large size zstack to contain any size of text
+                                    Text(self.text)
+                                        .background(GeometryReader { fullTextGeometry in
+                                            Color.clear.onAppear {
+                                                self.truncated = fullTextGeometry.size.height > visibleTextGeometry.size.height
+                                            }
+                                        })
+                                }
+                                .frame(height: .greatestFiniteMagnitude)
+                            })
+                            .hidden() //keep hidden
+                    )
+                if truncated {
+                    Button(action: {
+                        withAnimation {
+                            expanded.toggle()
+                        }
+                    }, label: {
+                        Text(moreLessText)
+                    })
+                }
             }
         }
     }
