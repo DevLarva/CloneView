@@ -14,12 +14,11 @@
 		AC0316592B0FA9AE004F7C41 /* AVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0316582B0FA9AE004F7C41 /* AVPlayer.swift */; };
 		AC03165B2B0FAA23004F7C41 /* AVPlayermodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC03165A2B0FAA23004F7C41 /* AVPlayermodel.swift */; };
 		AC28BBAC2B0F736F00E071D3 /* MovieCloneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28BBAB2B0F736F00E071D3 /* MovieCloneAppApp.swift */; };
-		AC28BBAE2B0F736F00E071D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28BBAD2B0F736F00E071D3 /* ContentView.swift */; };
 		AC28BBB02B0F737000E071D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC28BBAF2B0F737000E071D3 /* Assets.xcassets */; };
 		AC28BBB32B0F737000E071D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC28BBB22B0F737000E071D3 /* Preview Assets.xcassets */; };
-		AC28BBBC2B0F965000E071D3 /* SidebarMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28BBBB2B0F965000E071D3 /* SidebarMainView.swift */; };
 		AC28BBC02B0F98F600E071D3 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28BBBF2B0F98F600E071D3 /* MovieData.swift */; };
 		AC5308D42B123D740031BA1F /* VideoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5308D32B123D740031BA1F /* VideoCardView.swift */; };
+		AC79BD882B14CD2300FA7CE8 /* ActorCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79BD872B14CD2300FA7CE8 /* ActorCellView.swift */; };
 		ACD18D9B2B138974000318B4 /* VideoPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD18D9A2B138974000318B4 /* VideoPlayView.swift */; };
 		ACD18D9E2B138C73000318B4 /* THE AVENGERS.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ACD18D9D2B138C73000318B4 /* THE AVENGERS.mp4 */; };
 /* End PBXBuildFile section */
@@ -33,12 +32,11 @@
 		AC03165A2B0FAA23004F7C41 /* AVPlayermodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayermodel.swift; sourceTree = "<group>"; };
 		AC28BBA82B0F736F00E071D3 /* MovieCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC28BBAB2B0F736F00E071D3 /* MovieCloneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCloneAppApp.swift; sourceTree = "<group>"; };
-		AC28BBAD2B0F736F00E071D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC28BBAF2B0F737000E071D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC28BBB22B0F737000E071D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AC28BBBB2B0F965000E071D3 /* SidebarMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarMainView.swift; sourceTree = "<group>"; };
 		AC28BBBF2B0F98F600E071D3 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
 		AC5308D32B123D740031BA1F /* VideoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCardView.swift; sourceTree = "<group>"; };
+		AC79BD872B14CD2300FA7CE8 /* ActorCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorCellView.swift; sourceTree = "<group>"; };
 		ACD18D9A2B138974000318B4 /* VideoPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayView.swift; sourceTree = "<group>"; };
 		ACD18D9D2B138C73000318B4 /* THE AVENGERS.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "THE AVENGERS.mp4"; path = "../../../../../../.Trash/THE AVENGERS.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				AC28BBAB2B0F736F00E071D3 /* MovieCloneAppApp.swift */,
-				AC28BBAD2B0F736F00E071D3 /* ContentView.swift */,
 				AC0316502B0F9E17004F7C41 /* MainView.swift */,
 				AC28BBBE2B0F98C700E071D3 /* Model */,
 				AC28BBB92B0F961100E071D3 /* View */,
@@ -96,23 +93,13 @@
 		AC28BBB92B0F961100E071D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AC0316522B0F9ECE004F7C41 /* MovieCell.swift */,
+				ACD18DA02B139711000318B4 /* Cell */,
+				ACD18D9F2B1396F9000318B4 /* Video */,
 				AC0316562B0FA796004F7C41 /* readmoreView.swift */,
 				AC0316542B0FA58D004F7C41 /* MovieDetailMain.swift */,
-				AC5308D32B123D740031BA1F /* VideoCardView.swift */,
-				ACD18D9A2B138974000318B4 /* VideoPlayView.swift */,
-				AC28BBBA2B0F961800E071D3 /* Sidebar */,
+				AC79BD872B14CD2300FA7CE8 /* ActorCellView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		AC28BBBA2B0F961800E071D3 /* Sidebar */ = {
-			isa = PBXGroup;
-			children = (
-				AC28BBBB2B0F965000E071D3 /* SidebarMainView.swift */,
-			);
-			name = Sidebar;
-			path = "../New Group/Sidebar";
 			sourceTree = "<group>";
 		};
 		AC28BBBE2B0F98C700E071D3 /* Model */ = {
@@ -131,6 +118,23 @@
 				ACD18D9D2B138C73000318B4 /* THE AVENGERS.mp4 */,
 			);
 			path = Video;
+			sourceTree = "<group>";
+		};
+		ACD18D9F2B1396F9000318B4 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				AC5308D32B123D740031BA1F /* VideoCardView.swift */,
+				ACD18D9A2B138974000318B4 /* VideoPlayView.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		ACD18DA02B139711000318B4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AC0316522B0F9ECE004F7C41 /* MovieCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,14 +209,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC28BBC02B0F98F600E071D3 /* MovieData.swift in Sources */,
-				AC28BBAE2B0F736F00E071D3 /* ContentView.swift in Sources */,
 				AC0316592B0FA9AE004F7C41 /* AVPlayer.swift in Sources */,
 				AC03165B2B0FAA23004F7C41 /* AVPlayermodel.swift in Sources */,
 				AC0316552B0FA58D004F7C41 /* MovieDetailMain.swift in Sources */,
 				AC0316532B0F9ECE004F7C41 /* MovieCell.swift in Sources */,
+				AC79BD882B14CD2300FA7CE8 /* ActorCellView.swift in Sources */,
 				AC28BBAC2B0F736F00E071D3 /* MovieCloneAppApp.swift in Sources */,
 				AC0316512B0F9E17004F7C41 /* MainView.swift in Sources */,
-				AC28BBBC2B0F965000E071D3 /* SidebarMainView.swift in Sources */,
 				AC5308D42B123D740031BA1F /* VideoCardView.swift in Sources */,
 				ACD18D9B2B138974000318B4 /* VideoPlayView.swift in Sources */,
 				AC0316572B0FA796004F7C41 /* readmoreView.swift in Sources */,

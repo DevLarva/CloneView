@@ -19,9 +19,11 @@ struct VideoCardView: View {
                     Image(uiImage: (video.thumbnail))
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .cornerRadius(10)
-                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 1))
-                    
+                        //.cornerRadius(10)
+                        //.overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 1))
+                        .clipShape(RoundedRectangle(cornerSize: CGSize(width: 60, height: 10)))
+                        .overlay(RoundedRectangle(cornerSize: CGSize(width: 60, height: 50))
+                            .stroke(Color.white, lineWidth: 1))
                     VStack {
                         // 플레이 기호
                         Image(systemName: "play.fill")
@@ -35,6 +37,7 @@ struct VideoCardView: View {
                 
                 
             }
+            .padding()
             .zIndex(1)
         }
     }
