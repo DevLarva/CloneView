@@ -41,14 +41,21 @@ struct MainView: View {
                                 .bold()
                         }
                     }
+                    
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "line.3.horizontal")
+                                .foregroundColor(.white)
+                                .bold()
+                        }
+                    }
                 }
                 .toolbarBackground(.visible, for: .navigationBar)
                 .toolbarBackground(.black, for: .navigationBar)
                 .navigationBarTitleDisplayMode(.inline)
-                
             }
-            
-            
         }
     }
 }

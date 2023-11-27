@@ -19,8 +19,8 @@
 		AC28BBC02B0F98F600E071D3 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28BBBF2B0F98F600E071D3 /* MovieData.swift */; };
 		AC5308D42B123D740031BA1F /* VideoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5308D32B123D740031BA1F /* VideoCardView.swift */; };
 		AC79BD882B14CD2300FA7CE8 /* ActorCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79BD872B14CD2300FA7CE8 /* ActorCellView.swift */; };
+		AC79BD8A2B14E15300FA7CE8 /* The AVENGERS.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC79BD892B14E15300FA7CE8 /* The AVENGERS.mp4 */; };
 		ACD18D9B2B138974000318B4 /* VideoPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD18D9A2B138974000318B4 /* VideoPlayView.swift */; };
-		ACD18D9E2B138C73000318B4 /* THE AVENGERS.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ACD18D9D2B138C73000318B4 /* THE AVENGERS.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +37,8 @@
 		AC28BBBF2B0F98F600E071D3 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
 		AC5308D32B123D740031BA1F /* VideoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCardView.swift; sourceTree = "<group>"; };
 		AC79BD872B14CD2300FA7CE8 /* ActorCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorCellView.swift; sourceTree = "<group>"; };
+		AC79BD892B14E15300FA7CE8 /* The AVENGERS.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "The AVENGERS.mp4"; path = "../../../../../../Downloads/The AVENGERS.mp4"; sourceTree = "<group>"; };
 		ACD18D9A2B138974000318B4 /* VideoPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayView.swift; sourceTree = "<group>"; };
-		ACD18D9D2B138C73000318B4 /* THE AVENGERS.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "THE AVENGERS.mp4"; path = "../../../../../../.Trash/THE AVENGERS.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 		ACD18D972B13834F000318B4 /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				ACD18D9D2B138C73000318B4 /* THE AVENGERS.mp4 */,
+				AC79BD892B14E15300FA7CE8 /* The AVENGERS.mp4 */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -196,7 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC28BBB32B0F737000E071D3 /* Preview Assets.xcassets in Resources */,
-				ACD18D9E2B138C73000318B4 /* THE AVENGERS.mp4 in Resources */,
+				AC79BD8A2B14E15300FA7CE8 /* The AVENGERS.mp4 in Resources */,
 				AC28BBB02B0F737000E071D3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -42,4 +42,5 @@ struct ActorCellView: View {
 
 /**
  - Zip 사용법 다시
+ - https://gyuios.tistory.com/168
  */
