@@ -13,12 +13,12 @@ struct MainView: View {
             
             ZStack {
                 Color.black.ignoresSafeArea()
-                
-                ScrollView {
-                    VStack {
-                        //headerView()
+                    ScrollView {
+                        VStack {
+                            headerView()
+                            merchandiseCell()
+                        }
                     }
-                }
                 
             }
             .toolbar {
@@ -40,6 +40,7 @@ struct MainView: View {
                         .bold()
                 }
             }
+            .zIndex(1)
         }
         
     }
