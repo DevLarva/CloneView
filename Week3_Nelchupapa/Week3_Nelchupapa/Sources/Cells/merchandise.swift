@@ -25,6 +25,7 @@ struct merchandiseCell: View {
                     .resizable()
                     .frame(width: 200, height: 200)
                     .rotationEffect(.degrees(-33))
+                Spacer()
             }
         }
         

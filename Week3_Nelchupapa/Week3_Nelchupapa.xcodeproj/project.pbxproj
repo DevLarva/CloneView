@@ -16,6 +16,7 @@
 		AC5ED09B2B1B3BA900095D7F /* JSONload.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5ED09A2B1B3BA900095D7F /* JSONload.swift */; };
 		AC81CE482B1A2EF400900C88 /* ShoesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC81CE472B1A2EF400900C88 /* ShoesModel.swift */; };
 		AC81CE4A2B1A301E00900C88 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC81CE492B1A301E00900C88 /* MainView.swift */; };
+		AC9B4D6E2B1CAF58002262CC /* SeachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B4D6D2B1CAF58002262CC /* SeachView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		AC5ED09A2B1B3BA900095D7F /* JSONload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONload.swift; sourceTree = "<group>"; };
 		AC81CE472B1A2EF400900C88 /* ShoesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesModel.swift; sourceTree = "<group>"; };
 		AC81CE492B1A301E00900C88 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AC9B4D6D2B1CAF58002262CC /* SeachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeachView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				AC5ED0932B1B261300095D7F /* headerView.swift */,
 				AC5ED0952B1B2F9E00095D7F /* merchandise.swift */,
+				AC9B4D6D2B1CAF58002262CC /* SeachView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5ED0942B1B261300095D7F /* headerView.swift in Sources */,
+				AC9B4D6E2B1CAF58002262CC /* SeachView.swift in Sources */,
 				AC22281A2B1A1B0500E8ABD0 /* ContentView.swift in Sources */,
 				AC81CE4A2B1A301E00900C88 /* MainView.swift in Sources */,
 				AC5ED0962B1B2F9E00095D7F /* merchandise.swift in Sources */,

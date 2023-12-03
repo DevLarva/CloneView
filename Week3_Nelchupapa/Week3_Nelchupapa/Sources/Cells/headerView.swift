@@ -21,6 +21,8 @@ struct headerView: View {
                 Image("slider-01")
                     .resizable()
                     .frame(width: 30, height: 30)
+                
+                SeachView()
             }
         }
     }
