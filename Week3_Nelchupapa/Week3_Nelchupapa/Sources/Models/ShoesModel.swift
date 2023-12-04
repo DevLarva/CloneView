@@ -16,7 +16,7 @@ struct Shoe: Codable,Identifiable {
     var price: Double
 }
 
-class ShoesInf: ObservableObject {
+class ShoesInfo: ObservableObject {
     @Published var shoes: [Shoe]
     init(shoes: [Shoe] = []) {
         self.shoes = shoes

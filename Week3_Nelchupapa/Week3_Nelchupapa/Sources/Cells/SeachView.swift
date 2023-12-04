@@ -16,7 +16,7 @@ struct SeachView: View {
             Image(systemName: "magnifyingglass")
                 .foregroundColor(.white)
             
-            TextField("Search...", text: $searchtext)
+            TextField("", text: $searchtext)
                 .foregroundColor(.gray)
         }
         .padding(.leading)

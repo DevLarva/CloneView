@@ -10,7 +10,6 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         NavigationStack {
-            
             ZStack {
                 Color.black.ignoresSafeArea()
                     ScrollView {
@@ -19,7 +18,6 @@ struct MainView: View {
                             merchandiseCell()
                         }
                     }
-                
             }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {

@@ -1,0 +1,51 @@
+//
+//  Data.json
+//  Week3_Nelchupapa
+//
+//  Created by 백대홍 on 12/4/23.
+//
+
+[
+    {
+        "id" : "1",
+        "name" : "Nike-React-Frenzy",
+        "mainimage" : "Nike-React-Frenzy",
+        "othercolorimage" : "Nike-React-Frenzy",
+        "star" : 4.8,
+        "price": 160
+    },
+    {
+        "id" : "2",
+        "name" : "Nike-React-Frenzy",
+        "mainimage" : "Nike-React-Frenzy",
+        "othercolorimage" : "Nike-React-Frenzy",
+        "star" : 4.8,
+        "price": 160
+    },
+    {
+        "id" : "3",
+        "name" : "Nike-React-Frenzy",
+        "mainimage" : "Nike-React-Frenzy",
+        "othercolorimage" : "Nike-React-Frenzy",
+        "star" : 4.8,
+        "price": 160
+    },
+    {
+        "id" : "4",
+        "name" : "Nike-React-Frenzy",
+        "mainimage" : "Nike-React-Frenzy",
+        "othercolorimage" : "Nike-React-Frenzy",
+        "star" : 4.8,
+        "price": 160
+    },
+    {
+        "id" : "5",
+        "name" : "Nike-React-Frenzy",
+        "mainimage" : "Nike-React-Frenzy",
+        "othercolorimage" : "Nike-React-Frenzy",
+        "star" : 4.8,
+        "price": 160
+    },
+    
+]
+
