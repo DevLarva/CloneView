@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct merchandiseCell: View {
-    
     var body: some View {
         ZStack {
           
@@ -33,5 +32,5 @@ struct merchandiseCell: View {
 }
 
 #Preview {
-    merchandiseCell()
+    merchandiseCell(shoes: ShoesInfo())
 }

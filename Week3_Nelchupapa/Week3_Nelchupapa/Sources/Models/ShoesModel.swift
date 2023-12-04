@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Shoe: Codable,Identifiable {
-    var id: String
+struct Shoe: Identifiable {
+    var id = UUID()
     var name: String
     var mainimage: String
     var othercolorimage: String
@@ -16,11 +16,14 @@ struct Shoe: Codable,Identifiable {
     var price: Double
 }
 
-class ShoesInfo: ObservableObject {
-    @Published var shoes: [Shoe]
-    init(shoes: [Shoe] = []) {
-        self.shoes = shoes
-    }
-}
+var shoesData: [Shoe] = [
+    Shoe(name: "Nike-React-Frenzy", mainimage: "Nike-React-Frenzy", othercolorimage: "Nike-React-Frenzy", star: 4.8, price: 160),
+    
+    Shoe(name: "Nike-React-Frenzy", mainimage: "Nike-React-Frenzy", othercolorimage: "Nike-React-Frenzy", star: 4.8, price: 160),
+    
+    Shoe(name: "Nike-React-Frenzy", mainimage: "Nike-React-Frenzy", othercolorimage: "Nike-React-Frenzy", star: 4.8, price: 160),
+    
+    Shoe(name: "Nike-React-Frenzy", mainimage: "Nike-React-Frenzy", othercolorimage: "Nike-React-Frenzy", star: 4.8, price: 160),
 
+]
 //- 신발(이미지, 이름, 가격, 별점, Color)
