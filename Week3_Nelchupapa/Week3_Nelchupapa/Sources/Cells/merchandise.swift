@@ -61,5 +61,5 @@ struct merchandiseCell: View {
 }
 
 #Preview {
-    merchandiseCell(shoe:  Shoe(name: "Nike-React-Frenzy", mainimage: "Nike-React-Frenzy", othercolorimage: "Nike-React-Frenzy", star: 4.8, price: 160))
+    merchandiseCell(shoe:  Shoe(name: "Nike-React-Frenzy", mainimage: "Nike-React-Frenzy", othercolorimage: "Nike-React-Frenzy", star: "4.8", price: "160"))
 }

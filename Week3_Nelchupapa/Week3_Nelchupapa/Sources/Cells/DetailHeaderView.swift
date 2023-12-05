@@ -16,7 +16,8 @@ struct DetailHeaderView: View {
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     .bold()
                 //하트 자리
-                HeartButton(borderColor: .pink)
+                Spacer()
+                HeartButton(backgroundColor: .white)
             }
             
             HStack {
@@ -29,11 +30,14 @@ struct DetailHeaderView: View {
                 
                 Text("reviews")
             }
-                
+            Text("$\(String(shoe.price))")
+                .font(.title2)
+                .bold()
         }
+        
     }
 }
 
 #Preview {
-    DetailHeaderView(shoe:  Shoe(name: "React Frenzy", mainimage: "Nike-React-Frenzy", othercolorimage: "Nike-React-Frenzy", star: 4.8, price: 160))
+    DetailHeaderView(shoe:  Shoe(name: "React Frenzy", mainimage: "Nike-React-Frenzy", othercolorimage: "Nike-React-Frenzy", star: "4.8", price: "160"))
 }

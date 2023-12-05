@@ -7,13 +7,12 @@
 
 import SwiftUI
 
-
 struct HeartButton: View {
     @State private var isLiked = false
-    var borderColor: Color
+    var backgroundColor: Color
 
-    init(borderColor: Color = .gray) {
-        self.borderColor = borderColor
+    init(backgroundColor: Color = .clear) {
+        self.backgroundColor = backgroundColor
     }
 
     var body: some View {
@@ -22,15 +21,21 @@ struct HeartButton: View {
         }) {
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(borderColor, lineWidth: 2)
+                    .fill(backgroundColor)
                     .frame(width: 50, height: 50)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.gray, lineWidth: 1)
+                    )
                 
                 Image(systemName: isLiked ? "heart.fill" : "heart")
-                    .foregroundColor(isLiked ? .red : .gray)
+                    .foregroundColor(isLiked ? .pink : .clear)
+                
             }
         }
     }
 }
+
 
 #Preview {
     HeartButton()

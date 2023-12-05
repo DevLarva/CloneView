@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AC0DA6CF2B1F6C86009BAB43 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0DA6CE2B1F6C86009BAB43 /* DetailHeaderView.swift */; };
 		AC0DA6D12B1F6F3E009BAB43 /* HeartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0DA6D02B1F6F3E009BAB43 /* HeartButton.swift */; };
+		AC0DA6D32B1F71C3009BAB43 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0DA6D22B1F71C3009BAB43 /* DetailView.swift */; };
 		AC2228182B1A1B0500E8ABD0 /* Week3_NelchupapaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2228172B1A1B0500E8ABD0 /* Week3_NelchupapaApp.swift */; };
 		AC22281A2B1A1B0500E8ABD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2228192B1A1B0500E8ABD0 /* ContentView.swift */; };
 		AC22281C2B1A1B0600E8ABD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC22281B2B1A1B0600E8ABD0 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		AC0DA6CE2B1F6C86009BAB43 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
 		AC0DA6D02B1F6F3E009BAB43 /* HeartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartButton.swift; sourceTree = "<group>"; };
+		AC0DA6D22B1F71C3009BAB43 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		AC2228142B1A1B0500E8ABD0 /* Week3_Nelchupapa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week3_Nelchupapa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2228172B1A1B0500E8ABD0 /* Week3_NelchupapaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week3_NelchupapaApp.swift; sourceTree = "<group>"; };
 		AC2228192B1A1B0500E8ABD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				AC2228192B1A1B0500E8ABD0 /* ContentView.swift */,
 				AC81CE492B1A301E00900C88 /* MainView.swift */,
 				ACA56DDC2B1E2D7E002E1B2B /* MechandiseView.swift */,
+				AC0DA6D22B1F71C3009BAB43 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				AC9B4D6E2B1CAF58002262CC /* SeachView.swift in Sources */,
 				AC22281A2B1A1B0500E8ABD0 /* ContentView.swift in Sources */,
 				ACA56DDD2B1E2D7E002E1B2B /* MechandiseView.swift in Sources */,
+				AC0DA6D32B1F71C3009BAB43 /* DetailView.swift in Sources */,
 				AC81CE4A2B1A301E00900C88 /* MainView.swift in Sources */,
 				AC5ED0962B1B2F9E00095D7F /* merchandise.swift in Sources */,
 				AC2228182B1A1B0500E8ABD0 /* Week3_NelchupapaApp.swift in Sources */,
