@@ -10,15 +10,14 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         NavigationStack {
-            
             ZStack {
                 Color.black.ignoresSafeArea()
                     ScrollView {
                         VStack {
                             headerView()
-                            merchandiseCell()
                         }
                     }
+                
                 
             }
             .toolbar {
@@ -40,7 +39,7 @@ struct MainView: View {
                         .bold()
                 }
             }
-            .zIndex(1)
+//            .zIndex(1)
         }
         
     }
