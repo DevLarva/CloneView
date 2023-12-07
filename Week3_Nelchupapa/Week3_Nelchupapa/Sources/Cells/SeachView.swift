@@ -12,7 +12,6 @@ struct SeachView: View {
     var body: some View {
         
         HStack {
-            
             Image(systemName: "magnifyingglass")
                 .foregroundColor(.white)
             
