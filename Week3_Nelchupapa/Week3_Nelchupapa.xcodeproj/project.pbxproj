@@ -20,6 +20,7 @@
 		AC81CE4A2B1A301E00900C88 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC81CE492B1A301E00900C88 /* MainView.swift */; };
 		AC9B4D6E2B1CAF58002262CC /* SeachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B4D6D2B1CAF58002262CC /* SeachView.swift */; };
 		ACA56DDD2B1E2D7E002E1B2B /* MechandiseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA56DDC2B1E2D7E002E1B2B /* MechandiseView.swift */; };
+		ACC4C0D12B22051100D1C430 /* AddBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC4C0D02B22051100D1C430 /* AddBag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		AC81CE492B1A301E00900C88 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AC9B4D6D2B1CAF58002262CC /* SeachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeachView.swift; sourceTree = "<group>"; };
 		ACA56DDC2B1E2D7E002E1B2B /* MechandiseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechandiseView.swift; sourceTree = "<group>"; };
+		ACC4C0D02B22051100D1C430 /* AddBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				AC9B4D6D2B1CAF58002262CC /* SeachView.swift */,
 				AC0DA6CE2B1F6C86009BAB43 /* DetailHeaderView.swift */,
 				AC0DA6D02B1F6F3E009BAB43 /* HeartButton.swift */,
+				ACC4C0D02B22051100D1C430 /* AddBag.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				AC0DA6D12B1F6F3E009BAB43 /* HeartButton.swift in Sources */,
 				AC5ED0942B1B261300095D7F /* headerView.swift in Sources */,
+				ACC4C0D12B22051100D1C430 /* AddBag.swift in Sources */,
 				AC9B4D6E2B1CAF58002262CC /* SeachView.swift in Sources */,
 				AC22281A2B1A1B0500E8ABD0 /* ContentView.swift in Sources */,
 				ACA56DDD2B1E2D7E002E1B2B /* MechandiseView.swift in Sources */,

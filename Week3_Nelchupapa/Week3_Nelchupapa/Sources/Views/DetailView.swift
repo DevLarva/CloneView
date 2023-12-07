@@ -10,10 +10,23 @@ import SwiftUI
 struct DetailView: View {
     var shoe: [Shoe] = shoesData
     var body: some View {
-        VStack {
-            DetailHeaderView(shoe:  Shoe(name: "React Frenzy", mainimage: "Nike-React-Frenzy", othercolorimage: "Nike-React-Frenzy", star: "4.8", price: "160"))
+        ZStack(alignment:.trailing) {
+            Color.detail3.ignoresSafeArea()
+            RoundedRectangle(cornerRadius: 75)
+                .frame(width: 300, height: 380)
+                .foregroundStyle(Color.detail2)
+                .offset(x: 50)
+            VStack {
+                DetailHeaderView(shoe:  Shoe(name: "React Frenzy", mainimage: "Nike-React-Frenzy", othercolorimage: "Nike-React-Frenzy", star: "4.8", price: "160"))
+                
+                
+                
+                    
+                
+            }
+            .padding()
         }
-        .padding()
+        
     }
 }
 
