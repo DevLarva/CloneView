@@ -25,7 +25,10 @@ struct DetailView: View {
                 Spacer()
                 
                 SizeCell()
+                    .padding(.bottom)
+                
                 AddBag()
+                    
             }
             .padding()
         }
