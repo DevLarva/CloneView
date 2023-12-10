@@ -13,25 +13,27 @@ struct DetailView: View {
         ZStack(alignment:.trailing) {
             Color.detail3.ignoresSafeArea()
             
-            RoundedRectangle(cornerRadius: 75)
-                .frame(width: 300, height: 380)
-                .foregroundStyle(Color.detail2)
-                .offset(x: 50)
+           
             
-            VStack {
-                DetailHeaderView(shoe:  Shoe(name: "React Frenzy", mainimage: "Nike-React-Frenzy", othercolorimage: "Nike-React-Frenzy", star: "4.8", price: "160"))
+            VStack(alignment: .leading) {
+                DetailHeaderView(shoe:  Shoe(name: "React Frenzy", mainimage: "Nike-React-Frenzy", othercolorimage: "Nike-React-Frenzy", star: "4.8", price: "160", color: ["Nike-React-Frenzy", "Nike-React-Frenzy"]))
                 
               
-                Spacer()
                 
                 
-                SizeCell()
-                    .padding(.bottom)
+                HStack {
+                    MiddleView(shoe: Shoe(name: "React Frenzy", mainimage: "Nike-React-Frenzy", othercolorimage: "Nike-React-Frenzy", star: "4.8", price: "160", color: ["Nike-React-Frenzy", "Adapt BB 2.0"]))
+                }
                 
-                AddBag()
+                
+                    SizeCell()
+                        .padding(.leading)
+                    
+                    AddBag()
+                
                     
             }
-            .padding()
+            
             
         }
         

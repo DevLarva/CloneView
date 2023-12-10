@@ -29,7 +29,7 @@ struct HeartButton: View {
                     )
                 
                 Image(systemName: isLiked ? "heart.fill" : "heart")
-                    .foregroundColor(isLiked ? .pink : .clear)
+                    .foregroundColor(isLiked ? .red : .gray)
                 
             }
         }

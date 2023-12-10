@@ -12,7 +12,7 @@ struct AddBag: View {
         ZStack{
             VStack {
                 RoundedRectangle(cornerRadius: 55.0)
-                    .frame(width: 380, height: 140)
+                    .frame(width: 380, height: 100)
             }
             HStack(alignment:.center) {
                 Image("360-icon")
@@ -36,7 +36,7 @@ struct AddBag: View {
                         .bold()
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 25.0))
-                .frame(width: 180, height: 100)
+                .frame(width: 180, height: 70)
                 .padding(.horizontal, 24)
                 .padding(.vertical, 0)
                 .background(.detail1)

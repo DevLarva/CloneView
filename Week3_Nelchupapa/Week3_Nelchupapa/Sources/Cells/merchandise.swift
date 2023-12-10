@@ -10,50 +10,46 @@ import SwiftUI
 struct merchandiseCell: View {
     var shoe: Shoe
     var body: some View {
-        ZStack {
-          
-            VStack {
-               Text("sdasd")
-                    .foregroundStyle(Color.blue)
-                    
-            }
-            .frame(width: 176, height: 234)
-            .background(Color(.merchandise))
-            .cornerRadius(16)
-            .zIndex(1)
-            
-            .overlay {
-                VStack {
-                    
-                    Image(shoe.mainimage)
-                        .resizable()
-                        .frame(width: 200, height: 200)
-                        .rotationEffect(.degrees(-33))
-                        .offset(/*@START_MENU_TOKEN@*/CGSize(width: 10.0, height: 10.0)/*@END_MENU_TOKEN@*/)
-                       
-                    HStack {
+        VStack {
+            ZStack{
+                
+                Rectangle()
+                    .frame(width: 150,height: 180)
+                    .cornerRadius(20)
+                    .foregroundStyle(Color.merchandise)
+                
+                Image(shoe.mainimage)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 180)
+                    .rotationEffect(Angle(degrees: -45))
+                    .offset(x: -20,y:-45)
+                
+                HStack(spacing: 43){
+                    HStack{
                         Image(systemName: "star.fill")
-                            .foregroundStyle(Color.white)
-                        Text(String(shoe.star))
-                            .foregroundStyle(Color.white)
-                        Spacer()
-                        VStack {
-                           Image(systemName: "heart")
-                                
-                        }
+                            .resizable()
+                            .frame(width: 15,height: 15)
+                        Text(shoe.star)
+                            .font(.subheadline)
+                            .bold()
+                            .padding(.trailing)
                         
-                        .frame(width: 40, height: 40)
-                        .background(Color.white)
-                        .cornerRadius(16)
-                        .shadow(radius: 10)
-                        .padding(.horizontal, 17)
-                        .padding(.bottom, 17)
+                        HeartButton()
+                            .padding(.bottom)
                     }
-                    .padding(.bottom)
+                    .foregroundColor(.white)
                     
                     
                     
                 }
+                .offset(y:65)
+            }
+            VStack {
+                Text(shoe.name)
+                    .foregroundStyle(Color.white)
+                Text(shoe.price)
+                    .foregroundStyle(Color.gray)
             }
         }
         
@@ -61,5 +57,5 @@ struct merchandiseCell: View {
 }
 
 #Preview {
-    merchandiseCell(shoe:  Shoe(name: "Nike-React-Frenzy", mainimage: "Nike-React-Frenzy", othercolorimage: "Nike-React-Frenzy", star: "4.8", price: "160"))
+    merchandiseCell(shoe:  Shoe(name: "Nike-React-Frenzy", mainimage: "Nike-React-Frenzy", othercolorimage: "Nike-React-Frenzy", star: "4.8", price: "160", color: ["Nike-React-Frenzy", "Nike-React-Frenzy"]))
 }
