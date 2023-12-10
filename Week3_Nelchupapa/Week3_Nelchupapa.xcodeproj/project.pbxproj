@@ -22,6 +22,7 @@
 		ACA56DDD2B1E2D7E002E1B2B /* MechandiseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA56DDC2B1E2D7E002E1B2B /* MechandiseView.swift */; };
 		ACC4C0D12B22051100D1C430 /* AddBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC4C0D02B22051100D1C430 /* AddBag.swift */; };
 		ACC4C0D32B220B9000D1C430 /* SizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC4C0D22B220B9000D1C430 /* SizeCell.swift */; };
+		ACD1D5FC2B2602A300AA2AE4 /* MiddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD1D5FB2B2602A300AA2AE4 /* MiddleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		ACA56DDC2B1E2D7E002E1B2B /* MechandiseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechandiseView.swift; sourceTree = "<group>"; };
 		ACC4C0D02B22051100D1C430 /* AddBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBag.swift; sourceTree = "<group>"; };
 		ACC4C0D22B220B9000D1C430 /* SizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCell.swift; sourceTree = "<group>"; };
+		ACD1D5FB2B2602A300AA2AE4 /* MiddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				AC0DA6D02B1F6F3E009BAB43 /* HeartButton.swift */,
 				ACC4C0D02B22051100D1C430 /* AddBag.swift */,
 				ACC4C0D22B220B9000D1C430 /* SizeCell.swift */,
+				ACD1D5FB2B2602A300AA2AE4 /* MiddleView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				ACC4C0D32B220B9000D1C430 /* SizeCell.swift in Sources */,
 				AC5ED0962B1B2F9E00095D7F /* merchandise.swift in Sources */,
 				AC2228182B1A1B0500E8ABD0 /* Week3_NelchupapaApp.swift in Sources */,
+				ACD1D5FC2B2602A300AA2AE4 /* MiddleView.swift in Sources */,
 				AC81CE482B1A2EF400900C88 /* ShoesModel.swift in Sources */,
 				AC0DA6CF2B1F6C86009BAB43 /* DetailHeaderView.swift in Sources */,
 			);
